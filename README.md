@@ -25,6 +25,7 @@
     </li>
 </ul>
 <h6>getter, setter, inheritance</h6>
+
 ```
 public class User : Parent {}
 public class User : Parent{
