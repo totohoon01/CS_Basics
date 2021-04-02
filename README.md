@@ -48,3 +48,14 @@ User p1 = new User();
 p1.Name = "Hoon"; //setter
 Console.WriteLine(p1.Name) //getter
 ```
+
+<h6>virtual / override</h6>
+부모 클래스의 메서드를 상속, 로직을 추가<br>
+
+```
+public virtual void method(){}
+public override voide method(){
+    base.method();
+    new_logic();
+}
+```
