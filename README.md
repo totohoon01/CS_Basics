@@ -24,3 +24,26 @@
         </ol>
     </li>
 </ul>
+<h6>getter, setter, inheritance</h6>
+```
+public class User : Parent {}
+public class User : Parent{
+    //Field, Member Variables
+    private string name;
+    private int age;
+
+    //Properties
+    public string Name{
+        get{
+            return  this.name;
+        }
+        set{
+            //write logic//
+            this.name = value; //value에 값이 저장됨.
+        }
+    }
+}
+User p1 = new User();
+p1.Name = "Hoon"; //setter
+Console.WriteLine(p1.Name) //getter
+```

@@ -2,6 +2,24 @@
 
 namespace CSrecap
 {
+    public class Parent {}
+    //상속 : Parent
+    public class User : Parent{
+        //Field, Member Variables
+        private string name;
+        private int age;
+
+        //Properties
+        public string Name{
+            get{
+                return  this.name;
+            }
+            set{
+                //write logic//
+                this.name = value; //value에 값이 저장됨.
+            }
+        }
+    }
     class Program
     {
         static void Main(string[] args)
@@ -54,6 +72,10 @@ namespace CSrecap
             System.Console.WriteLine("");
             for(int i=0; i<intArray.Length; i++) Console.Write($"{intArray[i]} ");
 
+            //DAY2 - CLASS//
+            User p1 = new User();
+            p1.Name = "Hoon"; //setter
+            Console.WriteLine(p1.Name) //getter
         }
         static void Hello(string name){
             System.Console.WriteLine($"Hello, {name}");
