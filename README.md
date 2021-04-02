@@ -54,8 +54,33 @@ Console.WriteLine(p1.Name) //getter
 
 ```
 public virtual void method(){}
-public override voide method(){
+public override void method(){
     base.method();
     new_logic();
+}
+```
+
+<h5>DeleGate</h5>
+델리게이트 -> <b>함수</b>를 저장할 수 있는 변수
+
+```
+delegate void SumHandler(int a, int b); //형태를 선언하고
+SumHandler sumHandler; //델리게이트 핸들러 변수 생성
+
+void Sum(int a, int b)
+{
+    System.Console.WriteLine(a + b);
+}
+void Minus(int a, int b)
+{
+    System.Console.WriteLine(a - b);
+}
+
+
+public void Work02()
+{
+    sumHandler += Sum;  //핸들러에 함수 연결1
+    sumHandler += Minus; //2
+    sumHandler(10, 5);
 }
 ```
