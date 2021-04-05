@@ -2,6 +2,7 @@
 using DAY1;
 using ClassSynTax;
 using DelegateSyntax;
+using DataStructure;
 
 namespace CSrecap
 {
@@ -25,6 +26,9 @@ namespace CSrecap
             del1.PrintWhatEver(10.0f);
             del1.PrintWhatEver("111");
             del1.RunHandlers();
+
+            //Day 3 - DataStructure
+            Ds ds = new Ds();
         }
     }
 }

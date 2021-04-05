@@ -84,3 +84,50 @@ public void Work02()
     sumHandler(10, 5);
 }
 ```
+
+<br>
+
+<h5>자료구조<h5>
+
+|    이름    | 타입 명시 | 박싱/언박싱 | 성능 |
+| :--------: | :-------: | :---------: | :--: |
+|    List    |     O     |      X      | 빠름 |
+| ArrayList  |     X     |      O      | 느림 |
+| HashTable  |     X     |      O      | 느림 |
+| Dictionary |     O     |      X      | 빠름 |
+
+<b>Code</b>
+
+```
+void GetList()
+{
+    List<int> _list = new List<int>();
+    for (int i = 0; i < 3; i++)
+    {
+        _list.Add(i);
+    }
+}
+
+void GetArrayList()
+{
+    ArrayList _list = new ArrayList();
+    _list.Add(123123);
+    _list.Add("SDFSDFSDF");
+}
+
+void GetHashTable()
+{
+    Hashtable _hash = new Hashtable();
+    _hash.Add(123123, "sss");
+    _hash.Add("SDFSDFSDF", 123222);
+}
+
+void GetDictionary()
+{
+    Dictionary<int, int> _hash = new Dictionary<int, int>();
+    for (int i = 0; i < 3; i++)
+    {
+        _hash.Add(i, i);
+    }
+}
+```
