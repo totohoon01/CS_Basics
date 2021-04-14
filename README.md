@@ -131,3 +131,7 @@ void GetDictionary()
     }
 }
 ```
+
+Nullable -> int? a = null;<br>
+a에 null값 할당하는 것을 허용함, int와는 다른 데이터형식<br>
+a()?.b(); a()가 null이 아니면 b()를 실행.
